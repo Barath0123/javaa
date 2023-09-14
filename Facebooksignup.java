@@ -20,7 +20,7 @@ public class Facebooksignup {
 		options.merge(capabilities);
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://www.facebook.com");
-		Thread.sleep(4000);
+	    Thread.sleep(4000);
 		driver.findElement(By.xpath("//a[@role='button']/parent::div[@class='_6ltg']")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.name("firstname")).sendKeys("Barath");
